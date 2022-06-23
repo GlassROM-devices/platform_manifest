@@ -6,10 +6,10 @@
            review="https://android-review.googlesource.com/" />
   <remote  name="grapheneos"
            fetch="https://github.com/GrapheneOS/"
-           revision="refs/heads/12.1" />
+           revision="refs/tags/SP2A.220505.006.2022062200" />
   <remote  name="grapheneos-gitlab"
            fetch="https://gitlab.com/GrapheneOS/"
-           revision="refs/heads/12.1" />
+           revision="refs/tags/SP2A.220505.006.2022062200" />
   <default revision="refs/tags/android-12.1.0_r8"
            remote="aosp"
            sync-j="4" />
@@ -17,7 +17,7 @@
   <superproject name="platform/superproject" remote="aosp" revision="android-12.1.0_r8" />
   <contactinfo bugurl="go/repo-bug" />
 
-  <project path="build/make" name="platform_build" groups="pdk" remote="grapheneos" revision="refs/heads/12.1-crosshatch" >
+  <project path="build/make" name="platform_build" groups="pdk" remote="grapheneos" revision="refs/tags/SP2A.220505.006.2022062200" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -248,7 +248,7 @@
   <project path="external/guice" name="platform/external/guice" groups="pdk" />
   <project path="external/gwp_asan" name="platform/external/gwp_asan" groups="pdk" />
   <project path="external/hamcrest" name="platform/external/hamcrest" groups="pdk" />
-  <project path="external/hardened_malloc" name="hardened_malloc" remote="grapheneos" revision="refs/heads/12.1-crosshatch" />
+  <project path="external/hardened_malloc" name="hardened_malloc" remote="grapheneos" revision="refs/tags/SP2A.220505.006.2022062200" />
   <project path="external/harfbuzz_ng" name="platform/external/harfbuzz_ng" groups="pdk,qcom_msm8x26" />
   <project path="external/hyphenation-patterns" name="platform/external/hyphenation-patterns" groups="pdk" />
   <project path="external/icing" name="platform/external/icing" groups="pdk" />
@@ -1009,7 +1009,7 @@
   <project path="prebuilts/vndk/v29" name="platform/prebuilts/vndk/v29" groups="pdk" clone-depth="1" />
   <project path="prebuilts/vndk/v30" name="platform/prebuilts/vndk/v30" groups="pdk" clone-depth="1" />
   <project path="prebuilts/vndk/v31" name="platform/prebuilts/vndk/v31" groups="pdk" clone-depth="1" />
-  <project path="script" name="script" remote="grapheneos" revision="refs/heads/12.1-crosshatch" />
+  <project path="script" name="script" remote="grapheneos" revision="refs/tags/SP2A.220505.006.2022062200" />
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs,pdk-fs" />
   <project path="system/apex" name="platform/system/apex" groups="pdk" />
   <project path="system/bt" name="platform_system_bt" groups="pdk" remote="grapheneos" />
